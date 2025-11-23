@@ -6,12 +6,12 @@ export function LinkedInPosts() {
     {
       id: 1,
       content: "Honestly, fear of AI is turning into a full self-fulfilling prophecy. The more you avoid it, the faster it replaces you. 👀\n\nIt's no longer just simple denial; it's active self-sabotage.\n\nLet me explain: My observation is that people are so afraid of AI making them irrelevant, they're not even trying to learn the skills that would keep them relevant.\n\nThat fear-driven inaction? It's the very thing making the fear come true.",
-      link: "https://www.linkedin.com/feed/", // Replace with actual post URL
+      link: "https://www.linkedin.com/posts/prabhanjn-kulkarni_honestly-fear-of-ai-is-turning-into-a-full-activity-7397113181703163905-dL-s?utm_source=share&utm_medium=member_desktop&rcm=ACoAADopuiQBmDndFxrRlGiEsKjkE378iOxiG3Y",
     },
     {
       id: 2,
       content: "Jurassic Park had everything: technology, spectacle & praise; but one broken fence turned it into chaos.\n\nYour product is the same. Don't just guard the gates. Guard the damn cracks!",
-      link: "https://www.linkedin.com/feed/", // Replace with actual post URL
+      link: "https://www.linkedin.com/posts/prabhanjn-kulkarni_jurassic-park-had-everything-technology-activity-7389934684442394624-6elp?utm_source=share&utm_medium=member_desktop&rcm=ACoAADopuiQBmDndFxrRlGiEsKjkE378iOxiG3Y",
     },
   ];
 
