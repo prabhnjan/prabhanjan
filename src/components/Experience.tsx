@@ -1,3 +1,4 @@
+import { Card } from "./ui/card";
 import { motion } from "motion/react";
 import { SectionIcon } from "./SectionIcon";
 
@@ -6,7 +7,7 @@ const experiences = [
     title: "Associate Product Manager",
     company: "greytHR",
     period: "Sep 2024 – Present",
-    description: "Leading end-to-end development of Performance Management System with AI-driven capabilities.",
+    description: "Leading end-to-end development of Performance Management System.",
     achievements: [
       "Led development of Performance Management System including Goals & OKRs, Performance Reviews, 360° Feedback, Calibration, and Performance Library & Surveys",
       "Drove exponential business growth, increasing MRR from ₹6L to ₹23L in one year through feature adoption and PLG-led usage expansion",
@@ -58,30 +59,33 @@ export function Experience() {
             Experience
           </motion.h2>
         </div>
-        <div className="space-y-12">
+        <div className="space-y-8">
           {experiences.map((exp, index) => (
             <motion.div
               key={index}
-              className="border-l-2 border-neutral-200 pl-6"
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
-              <div className="relative">
-                <div className="absolute -left-[29px] top-0 w-4 h-4 bg-blue-500 rounded-full border-4 border-white"></div>
-                <h3 className="text-neutral-900 mb-1">{exp.title}</h3>
-                <p className="text-neutral-600 mb-2">{exp.company} • {exp.period}</p>
+              <Card className="p-8 border-neutral-200 hover:border-neutral-300 transition-colors">
+                <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
+                  <div>
+                    <h3 className="text-neutral-900">{exp.title}</h3>
+                    <p className="text-neutral-600 mt-1">{exp.company}</p>
+                  </div>
+                  <p className="text-neutral-500 mt-2 md:mt-0">{exp.period}</p>
+                </div>
                 <p className="text-neutral-600 mb-4">{exp.description}</p>
                 <ul className="space-y-2">
                   {exp.achievements.map((achievement, i) => (
                     <li key={i} className="text-neutral-600 flex items-start">
-                      <span className="text-blue-500 mr-2">▸</span>
-                      {achievement}
+                      <span className="mr-2">•</span>
+                      <span>{achievement}</span>
                     </li>
                   ))}
                 </ul>
-              </div>
+              </Card>
             </motion.div>
           ))}
         </div>

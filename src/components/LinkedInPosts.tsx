@@ -6,18 +6,18 @@ export function LinkedInPosts() {
     {
       id: 1,
       content: "Honestly, fear of AI is turning into a full self-fulfilling prophecy. The more you avoid it, the faster it replaces you. 👀\n\nIt's no longer just simple denial; it's active self-sabotage.\n\nLet me explain: My observation is that people are so afraid of AI making them irrelevant, they're not even trying to learn the skills that would keep them relevant.\n\nThat fear-driven inaction? It's the very thing making the fear come true.",
-      link: "https://www.linkedin.com/posts/prabhanjn-kulkarni_honestly-fear-of-ai-is-turning-into-a-full-activity-7397113181703163905-dL-s?utm_source=share&utm_medium=member_desktop&rcm=ACoAADopuiQBmDndFxrRlGiEsKjkE378iOxiG3Y",
+      link: "https://www.linkedin.com/feed/", // Replace with actual post URL
     },
     {
       id: 2,
       content: "Jurassic Park had everything: technology, spectacle & praise; but one broken fence turned it into chaos.\n\nYour product is the same. Don't just guard the gates. Guard the damn cracks!",
-      link: "https://www.linkedin.com/posts/prabhanjn-kulkarni_jurassic-park-had-everything-technology-activity-7389934684442394624-6elp?utm_source=share&utm_medium=member_desktop&rcm=ACoAADopuiQBmDndFxrRlGiEsKjkE378iOxiG3Y",
+      link: "https://www.linkedin.com/feed/", // Replace with actual post URL
     },
   ];
 
   return (
     <section id="linkedin" className="py-12 px-6 bg-white relative overflow-hidden">
-      {/* Background decoration */}
+      {/* Background decoration - THIS IS THE TINT */}
       <div className="absolute inset-0 opacity-30">
         <div className="absolute top-20 right-10 w-64 h-64 bg-blue-100 rounded-full blur-3xl" />
         <div className="absolute bottom-20 left-10 w-64 h-64 bg-cyan-100 rounded-full blur-3xl" />
@@ -35,6 +35,9 @@ export function LinkedInPosts() {
             <Linkedin className="w-6 h-6 text-blue-600" />
             <h2 className="text-neutral-900">Thought Leadership</h2>
           </div>
+          <p className="text-neutral-600 text-sm">
+            Sharing insights on AI, user experience & everything in between
+          </p>
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-6 mb-8">
@@ -87,7 +90,7 @@ export function LinkedInPosts() {
           className="text-center"
         >
           <a
-            href="https://www.linkedin.com/in/prabhanjn-kulkarni/recent-activity/all/"
+            href="https://www.linkedin.com/in/yourprofile/recent-activity/all/"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 transition-colors group text-sm"
