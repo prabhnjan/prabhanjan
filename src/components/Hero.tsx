@@ -197,7 +197,7 @@ export function Hero() {
                 transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
               >
                 <img 
-                  src="/prabhanjan/profile.png" 
+                  src="/know-me/profile.png" 
                   alt="Prabhanjan Kulkarni" 
                   className="w-full h-full object-cover"
                 />

@@ -54,7 +54,7 @@ export function Contact() {
           </Button>
           <Button 
             variant="outline"
-            onClick={() => window.open('/prabhanjan/resume.pdf', '_blank')}
+            onClick={() => window.open('/know-me/resume.pdf', '_blank')}
           >
             <FileText className="mr-2 h-4 w-4" />
             Resume
